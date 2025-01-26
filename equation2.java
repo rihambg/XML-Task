@@ -30,28 +30,27 @@ public class equation2 extends AppCompatActivity {
                 String bText = etB.getText().toString();
                 String cText = etC.getText().toString();
 
-                
+
                 if (TextUtils.isEmpty(aText) || TextUtils.isEmpty(bText) || TextUtils.isEmpty(cText)) {
                     tvSolutions.setText("Veuillez remplir tous les champs.");
                     return;
                 }
 
-                
+
                 double a = Double.parseDouble(aText);
                 double b = Double.parseDouble(bText);
                 double c = Double.parseDouble(cText);
 
-                
+
                 if (a == 0) {
                     tvSolutions.setText("Ce n'est pas une équation quadratique.");
                     return;
                 }
 
-                
                 double discriminant = b * b - 4 * a * c;
                 DecimalFormat df = new DecimalFormat("#.##");
 
-                
+
                 if (discriminant > 0) {
                     double root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
                     double root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
@@ -65,7 +64,7 @@ public class equation2 extends AppCompatActivity {
             }
         });
 
-        
+
         btnReinitialiser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

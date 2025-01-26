@@ -54,7 +54,7 @@ public class equation extends AppCompatActivity {
                     return;
                 }
 
-                
+
                 valeur.setText(String.format("%.2f", result));
             }
         });
