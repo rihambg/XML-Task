@@ -52,7 +52,7 @@ public class MainActivity4 extends AppCompatActivity {
         String bText = coefficientB.getText().toString().trim();
         String cText = coefficientC.getText().toString().trim();
 
-        // Validate inputs
+        
         if (aText.isEmpty() || bText.isEmpty() || cText.isEmpty()) {
             solutions.setText("Veuillez remplir tous les champs.");
             return;
