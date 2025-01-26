@@ -30,28 +30,28 @@ public class equation2 extends AppCompatActivity {
                 String bText = etB.getText().toString();
                 String cText = etC.getText().toString();
 
-                // Correction de la condition pour vérifier si les champs sont vides
+                
                 if (TextUtils.isEmpty(aText) || TextUtils.isEmpty(bText) || TextUtils.isEmpty(cText)) {
                     tvSolutions.setText("Veuillez remplir tous les champs.");
                     return;
                 }
 
-                // Conversion des entrées en double
+                
                 double a = Double.parseDouble(aText);
                 double b = Double.parseDouble(bText);
                 double c = Double.parseDouble(cText);
 
-                // Vérification si a est égal à zéro (pas une équation quadratique)
+                
                 if (a == 0) {
                     tvSolutions.setText("Ce n'est pas une équation quadratique.");
                     return;
                 }
 
-                // Calcul du discriminant
+                
                 double discriminant = b * b - 4 * a * c;
                 DecimalFormat df = new DecimalFormat("#.##");
 
-                // Résolution de l'équation selon le discriminant
+                
                 if (discriminant > 0) {
                     double root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
                     double root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
@@ -65,7 +65,7 @@ public class equation2 extends AppCompatActivity {
             }
         });
 
-        // Réinitialisation des champs
+        
         btnReinitialiser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
