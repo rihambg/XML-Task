@@ -1,0 +1,119 @@
+ <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001F3F">
+
+
+    <LinearLayout
+        android:id="@+id/inputFieldsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/matricule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Matricule"
+            android:backgroundTint="#007BFF"
+            android:textColorHint="@color/white"
+            android:hintTextColor="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Nom"
+            android:backgroundTint="#007BFF"
+            android:textColorHint="@color/white"
+            android:hintTextColor="#80FFFFFF" />
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Prénom"
+            android:backgroundTint="#007BFF"
+            android:textColorHint="@color/white"
+            android:hintTextColor="#80FFFFFF" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/firstRowButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputFieldsContainer"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ajouter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:backgroundTint="#007BFF"
+            android:text="Ajouter"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/supprimer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:backgroundTint="#007BFF"
+            android:text="Supprimer"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/chercher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:backgroundTint="#007BFF"
+            android:text="Chercher"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRowButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstRowButtons"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/modifier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:backgroundTint="#007BFF"
+            android:text="Modifier"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/afficherTous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:backgroundTint="#007BFF"
+            android:text="Afficher tous"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>

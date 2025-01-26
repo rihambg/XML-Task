@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A47AC8"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Saisir les coefficients de l'équation"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/et_a"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:hint="a"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+
+    <TextView
+        android:id="@+id/tv_x2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/et_a"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/et_a"
+        android:text="X**2 +"
+        android:textColor="#FFFFFF" />
+
+
+    <EditText
+        android:id="@+id/et_b"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_x2"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/tv_x2"
+        android:background="@android:color/darker_gray"
+        android:hint="b"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+
+    <TextView
+        android:id="@+id/tv_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/et_b"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/et_b"
+        android:text="X +"
+        android:textColor="#FFFFFF" />
+
+
+    <EditText
+        android:id="@+id/et_c"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_x"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/tv_x"
+        android:background="@android:color/darker_gray"
+        android:hint="c"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC" />
+
+
+    <TextView
+        android:id="@+id/tv_equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/et_c"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/et_c"
+        android:text="= 0"
+        android:textColor="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/btn_resoudre"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_a"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#A17CFF"
+        android:text="RESOUDRE"
+        android:textColor="#FFFFFF" />
+
+
+    <Button
+        android:id="@+id/btn_reinitialiser"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btn_resoudre"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/btn_resoudre"
+        android:background="#A17CFF"
+        android:text="REINITIALISER"
+        android:textColor="#FFFFFF" />
+
+
+    <TextView
+        android:id="@+id/tv_solutions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_resoudre"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Solutions"
+        android:textColor="#CCCCCC"
+        android:textSize="16sp" />
+</RelativeLayout>

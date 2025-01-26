@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001F3F">
+
+
+    <EditText
+        android:id="@+id/matricule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Matricule"
+        android:backgroundTint="#007BFF"
+        android:textColorHint="@color/white"
+        android:hintTextColor="#80FFFFFF" />
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/matricule"
+        android:layout_margin="20dp"
+        android:hint="Nom"
+        android:backgroundTint="#007BFF"
+       android:textColorHint="@color/white"
+        android:hintTextColor="#80FFFFFF" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nom"
+        android:layout_margin="20dp"
+        android:hint="Prénom"
+        android:backgroundTint="#007BFF"
+        android:textColorHint="@color/white"
+        android:hintTextColor="#80FFFFFF" />
+
+
+    <Button
+        android:id="@+id/ajouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prenom"
+        android:layout_margin="10dp"
+        android:layout_toStartOf="@+id/supprimer"
+        android:backgroundTint="#007BFF"
+        android:text="Ajouter"
+        android:textColor="@color/white" />
+    <Button
+        android:id="@+id/supprimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prenom"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="#007BFF"
+        android:text="Supprimer"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/chercher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prenom"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@id/supprimer"
+        android:backgroundTint="#007BFF"
+        android:text="Chercher"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/modifier"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ajouter"
+        android:layout_toEndOf="@+id/afficherTous"
+        android:layout_margin="10dp"
+        android:backgroundTint="#007BFF"
+        android:text="Modifier"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/afficherTous"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/supprimer"
+        android:layout_margin="10dp"
+        android:backgroundTint="#007BFF"
+        android:text="Afficher tous"
+        android:textColor="#FFFFFF"
+        />
+
+
+
+
+
+</RelativeLayout>

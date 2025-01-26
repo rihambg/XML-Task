@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADC9EB"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/valeur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="596dp"
+        android:hint="veillez saisir une valeur"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <RadioButton
+        android:id="@+id/eurodz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="158dp"
+        android:text="Euro->DzD"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:id="@+id/dzeuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_below="@+id/eurodz"
+        android:layout_marginLeft="120dp"
+        android:layout_marginStart="80dp"
+        android:text="DzD->Euro"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/convertir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="100dp"
+        android:text="convertir"
+        android:backgroundTint="#1A87C1"
+        android:textSize="20sp" />
+</RelativeLayout>

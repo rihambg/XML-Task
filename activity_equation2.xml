@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A47AC8"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saisir les coefficients de l'équation"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_coefficients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true">
+
+
+        <EditText
+            android:id="@+id/et_a"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:hint="a"
+            android:inputType="numberDecimal"
+            android:textColorHint="#CCCCCC"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/darker_gray"
+            android:layout_marginEnd="8dp" />
+
+
+        <TextView
+            android:id="@+id/tv_x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X**2 +"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+
+        <EditText
+            android:id="@+id/et_b"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:hint="b"
+            android:inputType="numberDecimal"
+            android:textColorHint="#CCCCCC"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/darker_gray"
+            android:layout_marginEnd="8dp" />
+
+
+        <TextView
+            android:id="@+id/tv_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X +"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+
+        <EditText
+            android:id="@+id/et_c"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:hint="c"
+            android:inputType="numberDecimal"
+            android:textColorHint="#CCCCCC"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/darker_gray"
+            android:layout_marginEnd="8dp" />
+
+
+        <TextView
+            android:id="@+id/tv_equals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="= 0"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layout_coefficients"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ExtraText">
+
+
+        <Button
+            android:id="@+id/btn_resoudre"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="RESOUDRE"
+            android:textColor="#FFFFFF"
+            android:background="#A17CFF"
+            android:layout_marginEnd="16dp" />
+
+
+
+        <Button
+            android:id="@+id/btn_reinitialiser"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="REINITIALISER"
+            android:textColor="#FFFFFF"
+            android:background="#A17CFF" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_solutions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solutions"
+        android:textSize="16sp"
+        android:textColor="#CCCCCC"
+        android:layout_below="@id/layout_buttons"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp" />
+</RelativeLayout>

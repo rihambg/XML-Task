@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F8DFED"
+    android:padding="20dp"
+    tools:context=".calcu" >
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="simple calculatrice"
+        android:textSize="30sp"
+        android:textColor="#D04EEB"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:textColorHint="#D04EEB"
+        android:hint="enter the number"
+        android:layout_below="@id/titre"
+        android:layout_marginTop="30dp" />
+
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:textColorHint="#D04EEB"
+        android:hint="enter the number"
+        android:layout_below="@id/number1"
+        android:layout_marginTop="10dp" />
+
+
+    <Button
+        android:id="@+id/addi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColorHint="@color/white"
+        android:backgroundTint="#D963C4"
+        android:textSize="30sp"
+        android:layout_below="@id/number2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"  />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="30sp"
+        android:layout_below="@id/number2"
+        android:backgroundTint="#D963C4"
+        android:layout_toEndOf="@id/addi"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"  />
+
+    <Button
+        android:id="@+id/mult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textSize="30sp"
+        android:layout_below="@id/number2"
+        android:backgroundTint="#D963C4"
+        android:layout_toEndOf="@id/sub"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"  />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="30sp"
+        android:layout_below="@id/number2"
+        android:backgroundTint="#D963C4"
+        android:layout_toEndOf="@id/mult"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"  />
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/mult"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="254dp"
+        android:textColor="#D04EEB"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>

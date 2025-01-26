@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F8DFED"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple Calculatrice"
+        android:textSize="30sp"
+        android:textColor="#D04EEB"
+        android:textStyle="bold"
+        android:layout_gravity="center"  />
+
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter the number"
+        android:textColorHint="#D04EEB"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter the number"
+        android:textColorHint="#D04EEB"
+        android:layout_marginTop="30dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30sp"
+            android:backgroundTint="#D963C4"
+            android:layout_below="@id/number2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"  />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="30sp"
+            android:backgroundTint="#D963C4"
+            android:layout_below="@id/number2"
+            android:layout_toEndOf="@id/add"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"  />
+
+        <Button
+            android:id="@+id/mult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="30sp"
+            android:backgroundTint="#D963C4"
+            android:layout_below="@id/number2"
+            android:layout_toEndOf="@id/sub"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"  />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="30sp"
+            android:backgroundTint="#D963C4"
+            android:layout_below="@id/number2"
+            android:layout_toEndOf="@id/mult"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"  />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/purple_200"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
