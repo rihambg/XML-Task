@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EAEA"
+    tools:context=".MainActivity2">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="61dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:text="Matricule"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="129dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="271dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#000000"
+        android:textColor="#000000"
+        android:textColorHint="#9C9C9C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matricule" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="259dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nom" />
+
+    <EditText
+        android:id="@+id/matricule"
+        android:layout_width="259dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <Button
+        android:id="@+id/ajouter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#F0B6B7"
+        android:text="Ajouter"
+        android:textColor="#1C1C1C"
+        app:layout_constraintEnd_toStartOf="@id/supprimer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prenom" />
+
+
+    <Button
+        android:id="@+id/supprimer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#F0B6B7"
+        android:text="Supprimer"
+        android:textColor="#1C1C1C"
+        app:layout_constraintEnd_toStartOf="@id/chercher"
+        app:layout_constraintStart_toEndOf="@id/ajouter"
+        app:layout_constraintTop_toBottomOf="@id/prenom" />
+
+    <!-- Chercher Button -->
+    <Button
+        android:id="@+id/chercher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F0B6B7"
+        android:text="Chercher"
+        android:textColor="#1C1C1C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/supprimer"
+        app:layout_constraintTop_toBottomOf="@id/prenom" />
+
+    <Button
+        android:id="@+id/modifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F0B6B7"
+        android:text="modifier"
+        android:textColor="#1C1C1C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supprimer" />
+
+    <Button
+        android:id="@+id/afficherTous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#F0B6B7"
+        android:text="afficher tous"
+        android:textColor="#1C1C1C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/supprimer" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="123dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_action_name" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="123dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/ic_image" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="58dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:text="Nom"
+        app:layout_constraintEnd_toStartOf="@+id/nom"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="62dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="36dp"
+        android:text="prenom"
+        app:layout_constraintEnd_toStartOf="@+id/prenom"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

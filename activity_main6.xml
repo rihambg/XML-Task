@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main6"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F7EAEA"
+    tools:context=".MainActivity6">
+
+    <!-- TextView for Operand 1 -->
+    <TextView
+        android:id="@+id/opt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="op1"
+        android:layout_marginBottom="8dp" />
+
+    <!-- EditText for Operand 1 -->
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TextView for Operand 2 -->
+    <TextView
+        android:id="@+id/opt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="op2"
+        android:layout_marginBottom="8dp" />
+
+    <!-- EditText for Operand 2 -->
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Buttons for operations -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:backgroundTint="#F0B6B7"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/buttonSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:backgroundTint="#F0B6B7"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="×"
+            android:backgroundTint="#F0B6B7"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="÷"
+            android:backgroundTint="#F0B6B7" />
+    </LinearLayout>
+
+    <!-- TextView for displaying result -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result:"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+</LinearLayout>
