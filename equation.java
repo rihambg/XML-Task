@@ -54,7 +54,7 @@ public class equation extends AppCompatActivity {
                     return;
                 }
 
-                // Affiche le résultat avec 2 décimales
+                
                 valeur.setText(String.format("%.2f", result));
             }
         });
